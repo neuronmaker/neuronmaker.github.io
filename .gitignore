@@ -2,4 +2,5 @@ Private
 Notes.md
 TODO.md
 *.jks
-
+/.idea/
+*.env
