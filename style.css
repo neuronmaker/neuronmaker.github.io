@@ -3,6 +3,12 @@ body{
 	color: #EEEEEE;
 	margin: 0;
 }
+a{
+	color: lightseagreen;
+}
+a:visited{
+	color: cyan;
+}
 #header{
 	position: sticky;
 	top: 0;
@@ -15,15 +21,29 @@ body{
 	flex-flow: row wrap;
 	min-height: 100%;
 	margin: 0 200px 0 200px;
+	align-content: center;
 }
 .contentCard{
-	padding: 10px;
+	padding: 0 10px 0 10px;
 	border: 1px white solid;
 	border-radius: 10px;
 	box-shadow: gray 1px 1px 15px;
 	width: max-content;
-	margin: 20px;
+	max-width: 600px;
+	min-width: 350px;
+	margin: 20px 20px 20px 20px;
 	flex: 25%;
+}
+@media (max-width: 1000px){
+	#content{
+		margin: 0 0 0 0;
+		max-width: 100%;
+	}
+	.contentCard{
+		margin: 20px 15px 20px 15px;
+		max-width: 100%;
+		flex: 100%;
+	}
 }
 #footer{
 	position: fixed;
