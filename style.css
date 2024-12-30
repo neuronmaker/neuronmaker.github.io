@@ -11,7 +11,7 @@ a:visited{
 }
 #header{
 	position: sticky;
-	top: 0;
+	top: 10px;
 	left: 0;
 	width: 100%;
 	margin: 0;
@@ -20,7 +20,7 @@ a:visited{
 	display: flex;
 	flex-flow: row wrap;
 	min-height: 100%;
-	margin: 0 200px 0 200px;
+	padding: 0 200px 0 200px;
 	align-content: center;
 }
 .contentCard{
@@ -31,17 +31,30 @@ a:visited{
 	width: max-content;
 	max-width: 600px;
 	min-width: 350px;
-	margin: 20px 20px 20px 20px;
+	margin: 15px 15px 15px 15px;
 	flex: 25%;
 }
-@media (max-width: 1000px){
+/* ditch the margin, keep columns */
+@media (max-width: 1225px){
 	#content{
 		margin: 0 0 0 0;
 		max-width: 100%;
 	}
 	.contentCard{
+	margin: 20px 20px 20px 20px;
+	}
+}
+/* at narrow width */
+@media (max-width: 824px){
+	#content{
+		margin: 0 0 0 0;
+		width: 100%;
+	}
+	.contentCard{
 		margin: 20px 15px 20px 15px;
-		max-width: 100%;
+		width: 100%;
+		max-width: 824px;
+		min-width: 0;
 		flex: 100%;
 	}
 }
