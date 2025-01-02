@@ -41,17 +41,17 @@ a:visited{
 		max-width: 100%;
 	}
 	.contentCard{
-	margin: 20px 20px 20px 20px;
+		margin: 20px 20px 20px 20px;
 	}
 }
 /* at narrow width */
 @media (max-width: 824px){
 	#content{
-		margin: 0 0 0 0;
+		padding: 0 0 0 0;
 		width: 100%;
 	}
 	.contentCard{
-		margin: 20px 15px 20px 15px;
+		padding: 20px 15px 20px 15px;
 		width: 100%;
 		max-width: 824px;
 		min-width: 0;
